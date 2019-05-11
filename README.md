@@ -23,9 +23,14 @@ $ cd KENSv3_dockerfile
 $ docker build -t kens .
 ```
 
-### Run docker image 
+### Run docker image and generate a container (remove '-it' to run container in background)
 ```
-$ docker run -it --rm -v PATH/TO/KENSv3/FOLDER:/KENSv3 kens
+$ docker run -it --rm -v PATH/TO/KENSv3/FOLDER:/KENSv3 --name kens_container kens
+```
+
+## Access running container
+```
+$ docker exec -it kens_container /bin/bash
 ```
 
 ### Happy Coding!
