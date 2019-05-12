@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # Install required tools
-RUN apt-get update && apt-get install -y sudo git cmake make gcc g++ libgtest-dev
+RUN apt-get update && apt-get install -y sudo git cmake make gcc g++ libgtest-dev python3 vim
 
 # Make directory for KENS
 RUN mkdir /KENSv3
